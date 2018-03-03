@@ -1,0 +1,38 @@
+.gallery-food{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    .img-mussel {
+        width: 100%;
+        margin-bottom: 4px;
+        position: relative;
+    }
+
+    .img-salad,
+    .img-pancake {
+        width: calc(50% - 2px);
+        position: relative;
+    }
+
+    p {
+        background-color:rgba(black, 0.8);
+        color:white;
+        line-height:1;
+        margin: 0;
+        padding: 12px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+    } 
+
+}
+
+
