@@ -1,0 +1,39 @@
+
+$nav-font: 'Roboto', 'Condensed Bold' ;
+$body-font: 'Roboto', 'Light';
+$dark-blue:rgb(0,89,145);
+$light-blue:rgb(26,113,169);
+$search-color:rgb(222,222,222);
+$grey-box:rgb(233,233,233);
+
+
+main{
+    background-image: url('../images/bg.jpg');
+   
+}
+
+// Wrapper Column widths
+// wr -> 939.11
+// col-01 -> 704.63
+// col-02 -> 225.04
+.wrapper{
+
+    $width: 939.11;
+    $col1: (704.63 / $width) * 100%;
+    $col2: (225.04 / $width) * 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 960px;
+    margin:0 auto;
+
+    .col-01 {
+        width: $col1;
+    }
+
+    .col-02 {
+        width: $col2;
+    }
+
+}
