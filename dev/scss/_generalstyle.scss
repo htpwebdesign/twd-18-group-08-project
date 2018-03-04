@@ -1,5 +1,5 @@
-
-$nav-font: 'Roboto', 'Condensed Bold' ;
+// Variables
+$nav-font: 'Roboto Condensed', 'sans-serif';
 $body-font: 'Roboto Light','sans-serif';
 $font:'Roboto Condensed', sans-serif;
 $menu-background: white;
@@ -9,7 +9,19 @@ $light-blue: rgb(26,113,169);
 $search-color: rgb(222,222,222);
 $grey-box: rgb(233,233,233);
 $header-bg-color: rgb(249,249,249);
+$mobile-header-bg-color: rgb(242,242,242);
 $nav-hover-color: #dfdfdf;
+$wrapper-width: 939.11px;
+
+// Media
+$mobile-portrait: 450px;
+$mobile-landscape: 650px;
+$tablet-portrait: 750px;
+$tablet-landscape: 1020px;
+
+body {
+    background-color: $header-bg-color;
+}
 
 main{
     background-image: url('../images/bg.jpg');
@@ -29,8 +41,9 @@ main{
     display: flex;
     justify-content: space-between;
 
-    width: 960px;
+    width: $wrapper-width;
     margin:0 auto;
+    padding-top:20px;
 
     .col-01 {
         width: $col1;
