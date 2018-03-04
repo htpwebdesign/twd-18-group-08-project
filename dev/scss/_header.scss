@@ -9,6 +9,9 @@ header {
         .logo-mobile {
             display: none;
         }
+        .menu-mobile {
+            display: none;
+        }
         .icons {
             background: url(../images/social_media_sprite.png);
             width: 35px;
@@ -39,10 +42,10 @@ header {
     }
 }
 
-// Media
 @media screen and (max-width: $mobile-portrait) {
     header {
         height: 60px;
+        background-color: $mobile-header-bg-color;
         .logo-wrapper {
             width: 100%;
             padding: 12px;
@@ -53,7 +56,16 @@ header {
                 display: none;
             }
             .menu-mobile {
-                
+                background: url(../images/menu.png);
+                background-color: $mobile-header-bg-color;
+                width: 35px;
+                height: 35px;
+                border: none;
+                outline: none;
+                display: block; // cursor: pointer;
+            }
+            .menu-mobile:hover {
+                background-position: 0 -35px;
             }
         }
         .icons {

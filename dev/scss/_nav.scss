@@ -48,12 +48,9 @@ nav {
 
 @media screen and (max-width: $mobile-portrait) {
     nav {
-        border-bottom: 2px solid $dark-blue;
-        justify-content: space-around;
+        border-bottom: 2px solid $dark-blue; // justify-content: space-around;
         .nav-center {
             display: none;
-        }
-        .nav-mobile {
         }
         input {
             display: none;
