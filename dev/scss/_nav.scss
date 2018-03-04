@@ -1,48 +1,59 @@
 nav {
     background-color: $dark-blue;
-    
-    ul {
-        height: 40px;
+    .nav-center {
         display: flex;
-        list-style: none;
+        width: $wrapper-width;
         margin: 0 auto;
-        justify-content: space-between;
-        width: 960px;
-        align-items: stretch;
-        background-color: $light-blue;
-        
-        li {
-            align-self: center;
-
-            a {
-                color: #fff;
-                text-decoration: none;
-                font-family: $nav-font;
-                font-weight: bold;
-            }
-        
-            a:hover{
-                text-decoration: none;
-                color: $nav-hover-color;
+        ul {
+            height: 40px;
+            display: flex;
+            list-style: none;
+            margin: 0 auto;
+            justify-content: space-around;
+            width: $wrapper-width;
+            align-items: stretch;
+            background-color: $light-blue;
+            padding-left: 0;
+            li {
+                align-self: center;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-family: $nav-font;
+                    font-size: 17px;
+                }
+                a:hover {
+                    text-decoration: none;
+                    color: $nav-hover-color;
+                }
             }
         }
-
         input {
             border: none;
-            box-shadow: inset 0px 0px 10px 1px #b6b6b6; 
+            box-shadow: inset 0px 0px 10px 1px #b6b6b6;
             background-color: $search-color;
-            background-image: url(../images/search.png); 
+            background-image: url(../images/search.png);
             background-repeat: no-repeat;
             background-position: 95%;
             font-size: 13px;
-            padding-left: 10px;
+            padding-left: 8px;
+            padding-right: 34px;
+            font-weight: 200;
         }
-
-        ::placeholder {
+         ::placeholder {
             color: #b6b6b6;
         }
     }
-    
-    
+}
 
+@media screen and (max-width: $mobile-portrait) {
+    nav {
+        border-bottom: 2px solid $dark-blue; // justify-content: space-around;
+        .nav-center {
+            display: none;
+        }
+        input {
+            display: none;
+        }
+    }
 }
