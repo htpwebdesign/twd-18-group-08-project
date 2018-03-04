@@ -1,31 +1,63 @@
 header {
     background-color: $header-bg-color;
-    
-    .logo {
-        width: 939.11px;
+    .logo-wrapper {
+        width: $wrapper-width;
         display: flex;
         margin: 0 auto;
-        padding: 20px 0;
-        justify-content: space-between; 
+        padding: 22.5px 0;
+        justify-content: space-between;
+        .logo-mobile {
+            display: none;
+        }
+        .icons {
+            background: url(../images/social_media_sprite.png);
+            width: 35px;
+            height: 30px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            margin: 10 0px;
+        }
+        #facebook-btn {
+            background-position: -30px 0px;
+        }
+        #facebook-btn:hover {
+            background-position: -30px 32px;
+        }
+        #googlep-btn {
+            background-position: -60px 0px;
+        }
+        #googlep-btn:hover {
+            background-position: -60px 32px;
+        }
+        #twitter-btn {
+            background-position: -95px 0px;
+        }
+        #twitter-btn:hover {
+            background-position: -95px 32px;
+        }
     }
-
-    .icons {
-        background: url(../images/social_media_sprite.png);
-        width: 35px;
-        height: 30px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        margin: 10 0px;
-    }
-    
-    #facebook-btn {background-position: -30px 0px;}
-    #facebook-btn:hover {background-position: -30px 32px;}
-    #googlep-btn {background-position: -60px 0px;}
-    #googlep-btn:hover {background-position: -60px 32px;}
-    #twitter-btn {background-position: -95px 0px;}
-    #twitter-btn:hover {background-position: -95px 32px;}
-
 }
 
-
+// Media
+@media screen and (max-width: $mobile-portrait) {
+    header {
+        height: 60px;
+        .logo-wrapper {
+            width: 100%;
+            padding: 12px;
+            .logo-mobile {
+                display: block;
+            }
+            .logo-desktop {
+                display: none;
+            }
+            .menu-mobile {
+                
+            }
+        }
+        .icons {
+            display: none;
+        }
+    }
+}
