@@ -10,7 +10,7 @@
     h1{
         color: $light-blue;
         font-family: $font;
-        font-weight:normal;
+        font-weight:lighter;
         font-size:32px;
         margin:0;
         padding:0;    
@@ -20,6 +20,9 @@
         font-family: $font;
         margin:0;
         padding-bottom:20px;
+        line-height:24px;
+        font-size:15px;
+        font-weight:lighter;
     }
     img{
         display:inline-block;
@@ -27,17 +30,22 @@
         padding:0;
         padding-bottom: 15px;
     }
-    button{
+.readmore{
+    text-align: right;
+
+    span{
         background-color:$light-blue;
         color:white;
         border:none;
-        font-weight: bold;
+        font-family: $font;
         overflow: auto;
         outline: none;
         width:100px;
         height:27px;
-       margin:0;
-       padding:0;  
+       padding:6px 5px;; 
+       cursor: pointer;
+
+    }
 }
 }
 .olderpost{
