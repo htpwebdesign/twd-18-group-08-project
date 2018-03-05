@@ -20,6 +20,31 @@ $mobile-landscape: 650px;
 $tablet-portrait: 750px;
 $tablet-landscape: 1020px;
 
+// Utility Classes
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+} 
+
+// Resets
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     background-color: $header-bg-color;
 }
@@ -33,9 +58,12 @@ main{
 // wr -> 939.11
 // col-01 -> 704.63
 // col-02 -> 225.04
+
+$site-max-width: 939.11;
+
 .wrapper{
 
-    $width: 939.11;
+    $width: $site-max-width;
     $col1: (704.63 / $width) * 100%;
     $col2: (225.04 / $width) * 100%;
 
