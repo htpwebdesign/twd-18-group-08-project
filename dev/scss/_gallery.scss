@@ -13,12 +13,20 @@
         margin-bottom: 4px;
         position: relative;
     }
+    
 
     .img-salad,
     .img-pancake {
         width: calc(50% - 2px);
         position: relative;
     }
+
+ .img-mussel:hover,
+ .img-salad:hover,
+ .img-pancake:hover{
+     opacity: 0.9;
+ }
+
 
     p {
         font-family: $font;
@@ -37,5 +45,26 @@
     } 
 
 }
+@media screen and (max-width: $mobile-portrait) {
 
+    .wrapper{
+
+        .img-salad,
+        .img-pancake,
+        .img-mussel {
+            margin:0 auto;
+        width: calc(100% - 20px);
+        margin-right:10px;
+        margin-left:10px;
+        margin-bottom:4px;
+        }
+       
+    }
+    .gallery-food{
+        width:430px;
+
+    }
+    
+
+}
 
