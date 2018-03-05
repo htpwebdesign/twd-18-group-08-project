@@ -13,7 +13,7 @@ header {
             display: none;
         }
         .icons {
-            background: url(../images/social_media_sprite.png);
+            background: url('../images/social_media_sprite.png');
             width: 35px;
             height: 30px;
             border: none;
@@ -56,13 +56,14 @@ header {
                 display: none;
             }
             .menu-mobile {
-                background: url(../images/menu.png);
+                background: url('../images/menu.png');
                 background-color: $mobile-header-bg-color;
                 width: 35px;
                 height: 35px;
                 border: none;
                 outline: none;
-                display: block; // cursor: pointer;
+                display: block; 
+                // cursor: pointer;
             }
             .menu-mobile:hover {
                 background-position: 0 -35px;
@@ -72,4 +73,16 @@ header {
             display: none;
         }
     }
+}
+
+@media screen and (max-width: $mobile-landscape) {
+    
+}
+
+@media screen and (max-width: $tablet-portrait) {
+   
+}
+
+@media screen and (max-width: $tablet-landscape) {
+    
 }
