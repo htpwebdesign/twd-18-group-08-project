@@ -20,9 +20,23 @@
 			<img class="logo-desktop" src="./images/logo.png" alt="Logo">
 			<img class="logo-mobile" src="./images/small_logo.jpg" alt="Small Logo">
 			<div class="social-icons">
-				<button id="facebook-btn" class="icons"></button>
-				<button id="googlep-btn" class="icons"></button>
-				<button id="twitter-btn" class="icons"></button>
+				<ul>
+					<li>
+						<a href="#" class="icons facebook">
+							<span class="sr-only">Facebook - Food Explorer</span>
+						</a>
+					</li>
+					<li>
+						<a href="#0" class="icons googlep">
+								<span class="sr-only">Google Plus - Food Explorer</span>
+						</a>
+					</li>
+					<li>
+						<a  href="#0"class="icons twitter">
+								<span class="sr-only">Twitter - Food Explorer</span>
+						</a>
+					</li>
+				</ul>
 			</div>
 			<button class="menu-mobile"></button>
 		</div>
@@ -44,8 +58,32 @@
 					<li>
 						<a href="#">Contact</a>
 					</li>
+					<li class="list-item-search">
+						<label for="search" class="sr-only">Search</label>
+						<input type="text" placeholder="Search">
+					</li>
+					<li>
+						<div class="social-icons">
+							<ul>
+								<li>
+									<a href="#" class="icons facebook">
+										<span class="sr-only">Facebook - Food Explorer</span>
+									</a>
+								</li>
+								<li>
+									<a href="#0" class="icons googlep">
+											<span class="sr-only">Google Plus - Food Explorer</span>
+									</a>
+								</li>
+								<li>
+									<a  href="#0"class="icons twitter">
+											<span class="sr-only">Twitter - Food Explorer</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
 				</ul>
-				<input type="text" placeholder="Search">
 			</div>
 		</nav>
 	</header>
@@ -55,7 +93,8 @@
 			<div class="col-01">
 				<section class="gallery-food">
 					<div class="img-mussel">
-						<img src="./images/mussel.jpg" alt="Mussel">
+						<img src="./images/mussel.jpg" alt="img-mussel"
+						srcset="./images/mussel.jpg 1800w,./images/mussel_small.jpg 450w" sizes="(max-width:450px) calc(100vw-40px), 410">
 						<p>SED AUCTOR DAPIBUS IPSUM</p>
 					</div>
 					<!-- end img-mussel row -->

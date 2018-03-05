@@ -1,99 +1,96 @@
 nav {
     background-color: $dark-blue;
-    .nav-center {
+    max-width:  $wrapper-width;
+}
+
+.nav-center {
+
+    $height: 40px;
+
+    display: block;
+    margin: 0 auto;
+    height: $height;
+
+    > ul {
         display: flex;
-        max-width: $wrapper-width;
-        margin: 0 auto;
-        ul {
-            height: 40px;
-            display: flex;
-            list-style: none;
-            margin: 0 auto;
-            justify-content: space-around;
-            width: 100%;
-            align-items: stretch;
-            background-color: $light-blue;
-            padding-left: 0;
-            li {
-                align-self: center;
-                a {
-                    color: #fff;
-                    text-decoration: none;
-                    font-family: $nav-font;
-                    font-size: 17px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        background-color: $light-blue;
+        padding-left: 0;
+        > li {
+
+            $search-list-item-width: 187px;
+
+            flex:1;
+            
+            &.list-item-search {
+                flex: 0 0 $search-list-item-width;
+                @media screen and (max-width: $mobile-portrait){
+                    display: none;
                 }
-                a:hover {
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                line-height: $height;
+                color: #fff;
+                text-decoration: none;
+                font-family: $nav-font;
+                font-size: 17px;
+                &:hover,
+                &:focus,
+                &:active {
                     text-decoration: none;
                     color: $nav-hover-color;
                 }
             }
+            
+            &:last-child {
+                display: none;
+                @media screen and (max-width: $mobile-portrait){
+                    display: block;
+                }
+            }
+        
         }
-        input {
-            border: none;
-            box-shadow: inset 0px 0px 10px 1px #b6b6b6;
-            background-color: $search-color;
-            background-image: url('../images/search.png');
-            background-repeat: no-repeat;
-            background-position: 95%;
-            font-size: 13px;
-            padding-left: 8px;
-            padding-right: 34px;
-            font-weight: 200;
-        }
-         ::placeholder {
+
+    }
+
+    input {
+        border: none;
+        display: block;
+        height: $height;
+        width: 100%;
+        box-shadow: inset 0px 0px 10px 1px #b6b6b6;
+        background-color: $search-color;
+        background-image: url('../images/search.png');
+        background-repeat: no-repeat;
+        background-position: 95%;
+        font-size: 13px;
+        padding-left: 8px;
+        padding-right: 34px;
+        font-weight: 200;
+        &::placeholder {
             color: #b6b6b6;
         }
     }
-}
 
-@media screen and (max-width: $mobile-portrait) {
-    nav {
-        border-bottom: 2px solid $dark-blue;
-        .nav-center {
-            display: none;
+    @media screen and (max-width: $mobile-portrait){
+        height: auto;
+        display: none;
+
+        > ul {
+            display: block;
         }
-        input {
-            display: none;
-        }
-    }
-    .show {
-        nav .nav-center {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            transition: height 0.3s, ease;
-            ul {
-                flex-direction: column;
-                height: 100%;
-                order: 2;
-                text-align: center;
-                li {
-                    border: 1px solid $dark-blue;
-                    width: 100%;
-                    padding: 10px;
-                    a {
-                        font-weight: 500;
-                    }
-                    a:hover {
-                        color: $dark-blue;
-                    }
-                }
-                li:hover {
-                    background-color: $menu-background;
-                    color: $dark-blue;
-                }
-            }
-            .input {
-                display: block;
-                width: 100%;
-                order: 1;
-                padding: 14px;
-            }
-            .social-icons {
-                display: block;
-                order: 3;
-                width: 100%;
-            }
+
+        .show & {
+            display: block;
         }
     }
+     
 }
+  
