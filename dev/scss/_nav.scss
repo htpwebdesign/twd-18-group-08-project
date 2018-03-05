@@ -2,7 +2,7 @@ nav {
     background-color: $dark-blue;
     .nav-center {
         display: flex;
-        width: $wrapper-width;
+        max-width: $wrapper-width;
         margin: 0 auto;
         ul {
             height: 40px;
