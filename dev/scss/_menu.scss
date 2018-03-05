@@ -11,17 +11,15 @@
         color: $light-blue;
         font-family: $font;
         font-weight:normal;
+        font-size:32px;
         margin:0;
-        padding:0;
-
-        
+        padding:0;    
     }
     p{
         color: $menu-color;
         font-family: $font;
         margin:0;
         padding-bottom:20px;
-
     }
     img{
         display:inline-block;
@@ -39,20 +37,17 @@
         width:100px;
         height:27px;
        margin:0;
-       padding:0;
-        
-      
-   
+       padding:0;  
 }
 }
 .olderpost{
-     margin-bottom:42px;
-        background: url('../images/previous_btn.png');
-        width:188px;
-        height:21px;
-        border:none;
-        outline:none;
-        cursor: pointer;
+    margin-bottom:42px;
+    background: url('../images/previous_btn.png');
+    width:188px;
+    height:21px;
+    border:none;
+    outline:none;
+    cursor: pointer;
 }
 #previousbtn{
     background-position: 0px 0px;

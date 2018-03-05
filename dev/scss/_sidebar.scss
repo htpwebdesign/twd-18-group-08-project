@@ -21,13 +21,18 @@
     li:nth-child(3){
         display: flex;
         background-color:white;
-        padding:11px;
+        padding:10px;
+        line-height:1.4;
+        font-size:14px;
+
     }
     li:nth-child(2),
     li:last-child{
         display: flex;
         background-color:$grey-box;
-        padding:11px;
+        padding:10px;
+        line-height:1.4;
+        font-size:14px;
     }
     p{
         padding-left:11px;
@@ -46,6 +51,7 @@
         margin:0;
         line-height: 1;
         padding:12px;
+        margin-top:20px;
     }
     ul{
         font-family: $font;
@@ -56,8 +62,9 @@
         padding-top:12px;
         padding-bottom: 12px;
         background-color: rgb(249,249,249);
-
-            
-        
+    }
+    li{
+        line-height:1.8;
+        font-size:13px;
     }
 }
