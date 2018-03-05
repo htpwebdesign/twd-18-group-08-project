@@ -10,7 +10,7 @@ nav {
             list-style: none;
             margin: 0 auto;
             justify-content: space-around;
-            width: $wrapper-width;
+            width: 100%;
             align-items: stretch;
             background-color: $light-blue;
             padding-left: 0;
@@ -32,7 +32,7 @@ nav {
             border: none;
             box-shadow: inset 0px 0px 10px 1px #b6b6b6;
             background-color: $search-color;
-            background-image: url(../images/search.png);
+            background-image: url('../images/search.png');
             background-repeat: no-repeat;
             background-position: 95%;
             font-size: 13px;
@@ -48,12 +48,52 @@ nav {
 
 @media screen and (max-width: $mobile-portrait) {
     nav {
-        border-bottom: 2px solid $dark-blue; // justify-content: space-around;
+        border-bottom: 2px solid $dark-blue;
         .nav-center {
             display: none;
         }
         input {
             display: none;
+        }
+    }
+    .show {
+        nav .nav-center {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            transition: height 0.3s, ease;
+            ul {
+                flex-direction: column;
+                height: 100%;
+                order: 2;
+                text-align: center;
+                li {
+                    border: 1px solid $dark-blue;
+                    width: 100%;
+                    padding: 10px;
+                    a {
+                        font-weight: 500;
+                    }
+                    a:hover {
+                        color: $dark-blue;
+                    }
+                }
+                li:hover {
+                    background-color: $menu-background;
+                    color: $dark-blue;
+                }
+            }
+            .input {
+                display: block;
+                width: 100%;
+                order: 1;
+                padding: 14px;
+            }
+            .social-icons {
+                display: block;
+                order: 3;
+                width: 100%;
+            }
         }
     }
 }
