@@ -24,6 +24,8 @@ nav {
             flex: 1;
             &.list-item-search {
                 flex: 0 0 $search-list-item-width;
+                order: 10;
+                
                 @media screen and (max-width: $mobile-portrait) {
                     // display: none;
                     // order: 1;
