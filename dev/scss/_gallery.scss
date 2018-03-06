@@ -45,26 +45,20 @@
     } 
 
 }
-@media screen and (max-width: $mobile-portrait) {
+@media screen and (max-width:$tablet-portrait) {
 
-    .wrapper{
-
-        .img-salad,
-        .img-pancake,
-        .img-mussel {
-            margin:0 auto;
-        width: calc(100% - 20px);
-        margin-right:10px;
-        margin-left:10px;
-        margin-bottom:4px;
-        }
-       
-    }
-    .gallery-food{
-        width:430px;
-
-    }
-    
-
+ .gallery-food{
+     margin-right:20px;
+     margin-left:20px;
 }
-
+}
+@media screen and (max-width: $mobile-portrait) {
+ .gallery-food{
+     display: block;
+     margin-right:10px;
+     margin-left:10px;
+     .img-salad,
+     .img-pancake {
+         width: 100%;
+     }
+    }}
