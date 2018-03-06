@@ -3,7 +3,7 @@
     background-color:$menu-background;
     padding:20px;
     margin:0;
-    margin-bottom:40px;
+    // margin-bottom:40px;
     margin-top:20px;
     
 
@@ -50,7 +50,7 @@
 }
 }
 .olderpost{
-    margin-bottom:42px;
+    margin: 40px 0;
     background: url('../images/previous_btn.png');
     width:187px;
     height:20.9px;
@@ -66,10 +66,10 @@
 }
 @media screen and (max-width:$tablet-portrait){
 .menu-pasta,
-.menu-ramen,
-.olderpost{
-    margin-right:20px;
-    margin-left:20px;
+.menu-ramen {
+    margin-bottom:0px;
+    // margin-right:20px;
+    // margin-left:20px;
 }
 }
 

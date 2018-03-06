@@ -82,6 +82,7 @@ nav {
                 border-bottom: 1px solid $dark-blue;
             }
             .social-icons-list li {
+                // margin: 0;
                 border-bottom: 0;
             }
             li:hover {
@@ -98,6 +99,7 @@ nav {
         .show & {
             display: block;
             border-bottom: 2px solid $dark-blue; // height: 100%;
+            margin: 0;
         }
     }
     @media screen and (max-width: $mobile-landscape) {
@@ -106,17 +108,13 @@ nav {
             display: none;
         }
     }
+    @media screen and (max-width: $tablet-landscape) {
+        margin: 0 30px;
+    }
     @media screen and (max-width:$tablet-portrait) {
         margin: 0 20px;
         .list-item-search {
             display: none;
         }
-    }
-    // @media screen and (min-width:$tablet-portrait) {
-    //     margin-left: 30px;
-    //     margin-right: 30px;
-    // }
-    @media screen and (max-width: $tablet-landscape) {
-        margin: 0 30px;
     }
 }

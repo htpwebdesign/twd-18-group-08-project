@@ -15,12 +15,16 @@ $header-bg-color: rgb(249, 249, 249);
 $mobile-header-bg-color: rgb(242, 242, 242);
 $nav-hover-color: #dfdfdf;
 $wrapper-width: 939.11px;
+// 
 // Media
+// 
 $mobile-portrait: 450px;
 $mobile-landscape: 650px;
-$tablet-portrait: 750px;
-$tablet-landscape: 1000px;
+$tablet-portrait: 800px;
+$tablet-landscape: 1024px;
+// 
 // Utility Classes
+// 
 .sr-only {
     position: absolute;
     width: 1px;
@@ -75,27 +79,23 @@ $site-max-width: 939.11;
     }
 }
 
-@media screen and (max-width: $mobile-portrait) {
-    .wrapper {
-        .col-01 {
-            width: 100%;
-        }
-    }
-}
-
-@media screen and (max-width:$tablet-portrait) {
-    .wrapper {
-        .col-01 {
-            width: 100%;
-        }
-    }
-}
-
 @media screen and (max-width: $tablet-landscape) {
     .wrapper {
         margin: 0 30px;
     }
-    .col-01 {
-        // margin-left: 30px;
+}
+@media screen and (max-width:$tablet-portrait) {
+    .wrapper {
+        margin: 0 20px;
+    
+        .col-01 {
+            width: 100%;
+        }
     }
 }
+@media screen and (max-width: $mobile-portrait) {
+    .col-01 {
+        width: 100%;
+    }
+}
+

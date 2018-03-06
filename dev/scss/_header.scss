@@ -3,7 +3,7 @@ header {
     .logo-wrapper {
         max-width: $wrapper-width;
         display: flex;
-        margin: 0 auto;
+        margin: auto;
         padding: 22.5px 0;
         justify-content: space-between;
         .logo-mobile {
@@ -36,12 +36,46 @@ header {
     }
 }
 
+@media screen and (max-width: $tablet-landscape) {
+    header {
+        .logo-wrapper {
+            margin: 0 30px;
+        }
+    }
+}
+@media screen and (max-width: $tablet-portrait) {
+    header {
+        .logo-wrapper {
+            margin: 0 20px;
+            .logo-desktop {
+                margin-right: auto;
+            }
+        }
+        .top-searchbox {
+            display: block;
+        }
+    }
+}
+@media screen and (max-width: $mobile-landscape) {
+    header {
+        .logo-wrapper {
+            // padding: 20px 0;
+            .logo-desktop {
+                margin-right: auto;
+            }
+        }
+        .top-searchbox {
+            display: flex;
+        }
+    }
+}
 @media screen and (max-width: $mobile-portrait) {
     header {
         background-color: $mobile-header-bg-color;
         .logo-wrapper {
             width: 100%;
-            padding: 12px;
+            margin: 0;
+            padding: 12px 10px;
             border-bottom: 2px solid $dark-blue;
             .show & {
                 border-bottom: 1px solid $dark-blue;
@@ -72,39 +106,7 @@ header {
     }
 }
 
-@media screen and (max-width: $mobile-landscape) {
-    header {
-        // position: relative;
-        .logo-wrapper {
-            padding: 20px;
-            .logo-desktop {
-                margin-right: auto;
-            }
-        }
-        .top-searchbox {
-            display: flex;
-        }
-    }
-}
 
-@media screen and (max-width: $tablet-portrait) {
-    header {
-        .logo-wrapper {
-            // padding: 20px;
-            .logo-desktop {
-                margin-right: auto;
-            }
-        }
-        .top-searchbox {
-            display: block;
-        }
-    }
-}
 
-@media screen and (max-width: $tablet-landscape) {
-    header {
-        .logo-wrapper {
-            margin: 0 30px;
-        }
-    }
-}
+
+
