@@ -18,12 +18,14 @@ header {
 
 @media screen and (max-width: $mobile-portrait) {
     header {
-        //height: 60px;
         background-color: $mobile-header-bg-color;
         .logo-wrapper {
             width: 100%;
             padding: 12px;
             border-bottom: 2px solid $dark-blue;
+            .show & {
+                border-bottom: 1px solid $dark-blue;
+            }
             .logo-mobile {
                 display: block;
             }

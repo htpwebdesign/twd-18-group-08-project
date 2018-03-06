@@ -7,8 +7,6 @@ nav {
     display: block;
     margin: 0 auto;
     max-width: $wrapper-width;
-    transition: height 0.3s ease;
-
     >ul {
         display: flex;
         list-style: none;
@@ -18,18 +16,14 @@ nav {
         background-color: $light-blue;
         padding-left: 0;
         >li {
-            border-bottom: 1px solid $dark-blue;
             height: $height;
             $search-list-item-width: 187px;
             flex: 1;
+            transition: all .5s ease;
             &.list-item-search {
                 flex: 0 0 $search-list-item-width;
                 order: 10;
-                
-                @media screen and (max-width: $mobile-portrait) {
-                    // display: none;
-                    // order: 1;
-                }
+                @media screen and (max-width: $mobile-portrait) {}
             }
             a {
                 display: block;
@@ -40,6 +34,7 @@ nav {
                 text-decoration: none;
                 font-family: $nav-font;
                 font-size: 17px;
+                transition: all .5s ease;
                 &:hover,
                 &:focus,
                 &:active {
@@ -74,30 +69,35 @@ nav {
         }
     }
     @media screen and (max-width: $mobile-portrait) {
-        height: auto;
+        // height: 0;
         display: none;
+        transition: all .2s ease;
         >ul {
             display: block;
-        }
-        li {
-            // order: 2;
-
-        }
-        li:hover {
-            background-color: $menu-background;
-            color: $dark-blue;
-        }
-        &.list-item-search {
-            order: 1;
-        }
-        .social-icons-list {
-            order: 3;
+            font-weight: 600;
+            .list-item-search input {
+                border-bottom: 1px solid $dark-blue;
+            }
+            li {
+                border-bottom: 1px solid $dark-blue;
+            }
+            .social-icons-list li {
+                border-bottom: 0;
+            }
+            li:hover {
+                background-color: $menu-background; // color: $dark-blue;
+                a {
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        color: $dark-blue;
+                    }
+                }
+            }
         }
         .show & {
             display: block;
-        }
-        .show .nav-center {
-            height: 288px;
+            border-bottom: 2px solid $dark-blue; // height: 100%;
         }
     }
 }
