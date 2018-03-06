@@ -72,3 +72,10 @@
         }
     }
 }
+@media screen and (max-width:$mobile-landscape){
+   
+    .social-icons{
+        display:none;
+
+    }
+}
