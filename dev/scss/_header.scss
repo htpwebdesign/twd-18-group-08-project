@@ -90,7 +90,7 @@ header {
 @media screen and (max-width: $tablet-portrait) {
     header {
         .logo-wrapper {
-            padding: 20px;
+            // padding: 20px;
             .logo-desktop {
                 margin-right: auto;
             }
@@ -104,7 +104,7 @@ header {
 @media screen and (max-width: $tablet-landscape) {
     header {
         .logo-wrapper {
-            padding: 20px;
+            margin: 0 30px;
         }
     }
 }
