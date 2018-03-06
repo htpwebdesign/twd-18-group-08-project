@@ -23,6 +23,7 @@
         line-height:24px;
         font-size:15px;
         font-weight:lighter;
+        text-align: justify;
     }
     img{
         display:inline-block;
@@ -63,15 +64,23 @@
 #previousbtn:hover{
     background-position: 0px 0px;
 }
+@media screen and (max-width:$tablet-portrait){
+.menu-pasta,
+.menu-ramen,
+.olderpost{
+    margin-right:20px;
+    margin-left:20px;
+}
+}
 
 @media screen and (max-width: $mobile-portrait) {
 
-    .col-01{
-        width:450px;
-    }
 .menu-pasta,
-.menu-ramen{
-    width:450px;
+.menu-ramen,
+.olderpost{
+    margin-right:10px;
+    margin-left:10px;
 }
+
 }
 

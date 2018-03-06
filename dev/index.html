@@ -93,9 +93,12 @@
 			<div class="col-01">
 				<section class="gallery-food">
 					<div class="img-mussel">
-						<img src="./images/mussel.jpg" alt="img-mussel"
-						srcset="./images/mussel.jpg 1800w,./images/mussel_small.jpg 450w" sizes="(max-width:450px) calc(100vw-40px), 410">
+						<picture>
+								<source srcset="images/mussel_small.jpg" media="(max-width: 640px)">
+						<img src="./images/mussel.jpg" alt="img-mussel">
+						
 						<p>SED AUCTOR DAPIBUS IPSUM</p>
+					</picture>
 					</div>
 					<!-- end img-mussel row -->
 					<div class="img-salad">

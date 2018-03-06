@@ -64,8 +64,8 @@ $site-max-width: 939.11;
 .wrapper{
 
     $width: $site-max-width;
-    $col1: (704.63 / $width) * 100%;
-    $col2: (225.04 / $width) * 100%;
+    $col1: (704.63 / $site-max-width) * 100%;
+    $col2: (225.04 / $site-max-width) * 100%;
 
     display: flex;
     justify-content: space-between;
@@ -82,4 +82,20 @@ $site-max-width: 939.11;
         width: $col2;
     }
 
+}
+@media screen and (max-width:$tablet-portrait) {
+    .wrapper{
+        .col-01{
+            width:100%;
+        }
+       
+}
+}
+@media screen and (max-width: $mobile-portrait) {
+    .wrapper{
+        .col-01{
+            width:100%;
+        }
+       
+}
 }
