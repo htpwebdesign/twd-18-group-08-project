@@ -1,7 +1,7 @@
 header {
     background-color: $header-bg-color;
     .logo-wrapper {
-        width: $wrapper-width;
+        max-width: $wrapper-width;
         display: flex;
         margin: 0 auto;
         padding: 22.5px 0;
@@ -23,6 +23,7 @@ header {
         .logo-wrapper {
             width: 100%;
             padding: 12px;
+            border-bottom: 2px solid $dark-blue;
             .logo-mobile {
                 display: block;
             }
@@ -47,14 +48,26 @@ header {
     }
 }
 
-@media screen and (max-width: $mobile-landscape) {
-    
+@media screen and (min-width: $mobile-landscape) {
+    header {
+        .logo-wrapper {
+        // padding: 22.5px;
+        }
+    }
 }
 
 @media screen and (max-width: $tablet-portrait) {
-   
+    header {
+        .logo-wrapper {
+        // padding: 22.5px;
+        }
+    }
 }
 
 @media screen and (max-width: $tablet-landscape) {
-    
+    header {
+        .logo-wrapper {
+        // padding: 22.5px;
+        }
+    }
 }
