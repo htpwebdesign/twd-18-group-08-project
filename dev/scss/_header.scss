@@ -14,10 +14,11 @@ header {
         }
     }
     .top-searchbox {
+        display: none;
         input {
             border: none;
             max-width: 180px;
-            height: 40px;
+            height: 35px;
             border-radius: 5px;
             box-shadow: inset 0px 0px 10px 1px #b6b6b6;
             background-color: $search-color;
@@ -32,7 +33,6 @@ header {
                 color: #b6b6b6;
             }
         }
-        display:none;
     }
 }
 
@@ -43,6 +43,7 @@ header {
         }
     }
 }
+
 @media screen and (max-width: $tablet-portrait) {
     header {
         .logo-wrapper {
@@ -56,6 +57,7 @@ header {
         }
     }
 }
+
 @media screen and (max-width: $mobile-landscape) {
     header {
         .logo-wrapper {
@@ -67,6 +69,28 @@ header {
         .top-searchbox {
             display: flex;
         }
+    }
+}
+@media screen and (max-width: 560px) {
+    header {
+        .logo-wrapper {
+            .menu-mobile {
+                display: block;
+                background: url('../images/menu.png');
+                background-color: $mobile-header-bg-color;
+                width: 35px;
+                height: 35px;
+                border: none;
+                outline: none;
+                display: block;
+                cursor: pointer;
+            }
+        }
+        .top-searchbox {
+            display: none;
+
+        }
+        
     }
 }
 @media screen and (max-width: $mobile-portrait) {
@@ -105,8 +129,4 @@ header {
         }
     }
 }
-
-
-
-
 
