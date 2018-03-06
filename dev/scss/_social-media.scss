@@ -56,13 +56,9 @@
         }
     }
     @media (max-width: $mobile-portrait) {
+        transition: all .2s ease;
         header .logo-wrapper & {
             display: none;
-        }
-        .social-icons {
-            // text-align: center;
-            transition: all .2s ease;
-            // height: 40px;
         }
         ul{
             align-items: center;
@@ -71,11 +67,10 @@
             height: 40px;
         }
     }
-}
-@media screen and (max-width:$mobile-landscape){
-   
-    .social-icons{
+    @media screen and (max-width:$mobile-landscape){
         display:none;
-
+    }
+    @media screen and (max-width: $tablet-portrait) {
+        margin-left: 10px;
     }
 }
