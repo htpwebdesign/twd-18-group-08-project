@@ -23,7 +23,7 @@
         background-color:white;
         padding:9px;
         line-height:1.4;
-        font-size:14px;
+        font-size:16px;
     }
     li:nth-child(2),
     li:last-child{
@@ -31,10 +31,11 @@
         background-color:$grey-box;
         padding:9px;
         line-height:1.4;
-        font-size:14px;
+        font-size:16px;
     }
     p{
         padding-left:11px;
+        margin: auto;
     }
     img{
         border:1px solid $light-blue;
@@ -54,7 +55,7 @@
         margin-top:20px;
     }
     ul{
-        font-family: $font;
+        font-family: $body-font;
         list-style:none;
         text-align: left;
         margin:0;
@@ -66,6 +67,11 @@
     li{
         line-height:25px;
         font-size:12px;
+    }
+    a {
+        font-size: 12px;
+        text-decoration: none;
+        color: black;
     }
 }
 @media screen and (max-width:$tablet-portrait) {
