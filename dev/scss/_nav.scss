@@ -1,17 +1,15 @@
 nav {
     background-color: $dark-blue;
-    max-width:  $wrapper-width;
 }
 
 .nav-center {
-
     $height: 40px;
-
     display: block;
     margin: 0 auto;
-    height: $height;
+    max-width: $wrapper-width;
+    transition: height 0.3s ease;
 
-    > ul {
+    >ul {
         display: flex;
         list-style: none;
         margin: 0;
@@ -19,19 +17,18 @@ nav {
         justify-content: space-between;
         background-color: $light-blue;
         padding-left: 0;
-        > li {
-
+        >li {
+            border-bottom: 1px solid $dark-blue;
+            height: $height;
             $search-list-item-width: 187px;
-
-            flex:1;
-            
+            flex: 1;
             &.list-item-search {
                 flex: 0 0 $search-list-item-width;
-                @media screen and (max-width: $mobile-portrait){
-                    display: none;
+                @media screen and (max-width: $mobile-portrait) {
+                    // display: none;
+                    // order: 1;
                 }
             }
-
             a {
                 display: block;
                 width: 100%;
@@ -48,18 +45,14 @@ nav {
                     color: $nav-hover-color;
                 }
             }
-            
             &:last-child {
                 display: none;
-                @media screen and (max-width: $mobile-portrait){
+                @media screen and (max-width: $mobile-portrait) {
                     display: block;
                 }
             }
-        
         }
-
     }
-
     input {
         border: none;
         display: block;
@@ -78,19 +71,31 @@ nav {
             color: #b6b6b6;
         }
     }
-
-    @media screen and (max-width: $mobile-portrait){
+    @media screen and (max-width: $mobile-portrait) {
         height: auto;
         display: none;
-
-        > ul {
+        >ul {
             display: block;
         }
+        li {
+            // order: 2;
 
+        }
+        li:hover {
+            background-color: $menu-background;
+            color: $dark-blue;
+        }
+        &.list-item-search {
+            order: 1;
+        }
+        .social-icons-list {
+            order: 3;
+        }
         .show & {
             display: block;
         }
+        .show .nav-center {
+            height: 288px;
+        }
     }
-     
 }
-  
