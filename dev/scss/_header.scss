@@ -12,24 +12,25 @@ header {
         .menu-mobile {
             display: none;
         }
-        
     }
     .top-searchbox {
-        display: block;
-        max-width:180px;
-        height:40px;
-        border-radius:5px;
-        box-shadow: inset 0px 0px 10px 1px #b6b6b6;
-        background-color: $search-color;
-        background-image: url('../images/search.png');
-        background-repeat: no-repeat;
-        background-position: 95%;
-        font-size: 13px;
-        padding-left: 8px;
-        padding-right: 34px;
-        font-weight: 200;
-        &::placeholder {
-            color: #b6b6b6;
+        input {
+            border: none;
+            max-width: 180px;
+            height: 40px;
+            border-radius: 5px;
+            box-shadow: inset 0px 0px 10px 1px #b6b6b6;
+            background-color: $search-color;
+            background-image: url('../images/search.png');
+            background-repeat: no-repeat;
+            background-position: 95%;
+            font-size: 13px;
+            padding-left: 8px;
+            padding-right: 34px;
+            font-weight: 200;
+            &::placeholder {
+                color: #b6b6b6;
+            }
         }
         display:none;
     }
@@ -58,7 +59,7 @@ header {
                 height: 35px;
                 border: none;
                 outline: none;
-                display: block; 
+                display: block;
                 cursor: pointer;
             }
             .menu-mobile:hover {
@@ -66,26 +67,22 @@ header {
             }
             .top-searchbox {
                 display: none;
-                    
             }
-            
         }
-       
     }
-   
 }
 
 @media screen and (max-width: $mobile-landscape) {
     header {
-        position: relative;
+        // position: relative;
         .logo-wrapper {
             padding: 20px;
+            .logo-desktop {
+                margin-right: auto;
+            }
         }
         .top-searchbox {
-            display:block;
-            position: absolute;
-            top:20px;
-            right:20px;
+            display: flex;
         }
     }
 }
@@ -94,12 +91,16 @@ header {
     header {
         .logo-wrapper {
             padding: 20px;
+            .logo-desktop {
+                margin-right: auto;
+            }
         }
-        .top-searchbox{
-            display:block;
+        .top-searchbox {
+            display: block;
         }
     }
 }
+
 @media screen and (max-width: $tablet-landscape) {
     header {
         .logo-wrapper {
