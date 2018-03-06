@@ -29,6 +29,7 @@ header {
             padding-left: 8px;
             padding-right: 34px;
             font-weight: 200;
+            outline: none;
             &::placeholder {
                 color: #b6b6b6;
             }
@@ -73,7 +74,15 @@ header {
 }
 @media screen and (max-width: 560px) {
     header {
+        background-color: $mobile-header-bg-color;
         .logo-wrapper {
+            width: 100%;
+            border-bottom: 2px solid $dark-blue;
+            margin: 0;
+            padding: 20px;
+            .show & {
+                border-bottom: 1px solid $dark-blue;
+            }
             .menu-mobile {
                 display: block;
                 background: url('../images/menu.png');
@@ -82,15 +91,17 @@ header {
                 height: 35px;
                 border: none;
                 outline: none;
-                display: block;
                 cursor: pointer;
+            }
+            .menu-mobile:hover {
+                background-position: 0 -35px;
             }
         }
         .top-searchbox {
             display: none;
 
         }
-        
+
     }
 }
 @media screen and (max-width: $mobile-portrait) {
@@ -102,7 +113,7 @@ header {
             padding: 12px 10px;
             border-bottom: 2px solid $dark-blue;
             .show & {
-                border-bottom: 1px solid $dark-blue;
+                // border-bottom: 1px solid $dark-blue;
             }
             .logo-mobile {
                 display: block;

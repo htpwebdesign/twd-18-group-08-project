@@ -61,7 +61,7 @@
     @media screen and (max-width:$mobile-landscape){
         display:none;
     }
-    @media (max-width: $mobile-portrait) {
+    @media (max-width: 560px) {
         margin: 0;
         display: block;
         transition: all .2s ease;
