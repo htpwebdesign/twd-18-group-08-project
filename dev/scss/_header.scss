@@ -50,10 +50,13 @@ header {
     }
 }
 
-@media screen and (min-width: $mobile-landscape) {
+@media screen and (max-width: $mobile-landscape) {
     header {
         .logo-wrapper {
-        // padding: 22.5px;
+        padding: 20px;
+        }
+        .social-icons {
+            display: none;
         }
     }
 }

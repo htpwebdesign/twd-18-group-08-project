@@ -85,7 +85,7 @@ nav {
                 border-bottom: 0;
             }
             li:hover {
-                background-color: $menu-background; // color: $dark-blue;
+                background-color: $menu-background;
                 a {
                     &:hover,
                     &:focus,
@@ -97,7 +97,15 @@ nav {
         }
         .show & {
             display: block;
-            border-bottom: 2px solid $dark-blue; // height: 100%;
+            border-bottom: 2px solid $dark-blue; 
+            // height: 100%;
         }
+    }
+    @media screen and (max-width: $mobile-landscape) {
+        padding: 0 20px;
+        .list-item-search {
+            display: none;
+        }
+
     }
 }
