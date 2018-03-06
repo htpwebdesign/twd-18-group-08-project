@@ -1,40 +1,33 @@
-.gallery-food{
+.gallery-food {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
     img {
         display: block;
         width: 100%;
     }
-
     .img-mussel {
         width: 100%;
         margin-bottom: 4px;
         position: relative;
     }
-    
-
     .img-salad,
     .img-pancake {
         width: calc(50% - 2px);
         position: relative;
     }
-
- .img-mussel:hover,
- .img-salad:hover,
- .img-pancake:hover{
-     opacity: 0.9;
- }
-
-
+    .img-mussel:hover,
+    .img-salad:hover,
+    .img-pancake:hover {
+        opacity: 0.9;
+    }
     p {
         font-family: $font;
-        background-color:rgba(black, 0.8);
-        color:white;
-        line-height:1;
+        background-color: rgba(black, 0.8);
+        color: white;
+        line-height: 1;
         font-weight: lighter;
-        font-size:23px;
+        font-size: 23px;
         margin: 0;
         padding: 12px;
         position: absolute;
@@ -42,23 +35,18 @@
         left: 0;
         width: 100%;
         box-sizing: border-box;
-    } 
-
+    }
+    @media screen and (max-width: $mobile-portrait) {
+        display: block;
+        margin-right: 10px;
+        margin-left: 10px;
+        .img-salad,
+        .img-pancake {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:$tablet-portrait) {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 }
-@media screen and (max-width:$tablet-portrait) {
-
- .gallery-food{
-     margin-right:20px;
-     margin-left:20px;
-}
-}
-@media screen and (max-width: $mobile-portrait) {
- .gallery-food{
-     display: block;
-     margin-right:10px;
-     margin-left:10px;
-     .img-salad,
-     .img-pancake {
-         width: 100%;
-     }
-    }}
