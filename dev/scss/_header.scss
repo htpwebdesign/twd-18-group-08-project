@@ -80,6 +80,9 @@ header {
             border-bottom: 2px solid $dark-blue;
             margin: 0;
             padding: 23px 0;
+            .logo-desktop {
+                margin-left:20px;
+            }
             .show & {
                 border-bottom: 1px solid $dark-blue;
             }
@@ -89,6 +92,7 @@ header {
                 background-color: $mobile-header-bg-color;
                 width: 35px;
                 height: 35px;
+                margin-right:20px;
                 border: none;
                 outline: none;
                 cursor: pointer;
