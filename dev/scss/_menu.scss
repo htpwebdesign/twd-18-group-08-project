@@ -11,6 +11,16 @@
         font-size: 44px;
         margin: 0;
         padding: 0;
+        @media screen and (max-width: $tablet-landscape) {
+            line-height: 95%;
+            font-size: 42px;
+        }
+        @media screen and (max-width: 560px) {
+            font-size: 34px;
+        }
+        @media screen and (max-width: $mobile-portrait) {
+            font-size: 28px;
+        }
     }
     p {
         color: $menu-color;
@@ -22,6 +32,12 @@
         font-size: 15px;
         font-weight: lighter;
         text-align: justify;
+        @media screen and (max-width: $tablet-landscape) {
+            margin-top: -3px;
+        }
+        @media screen and (max-width: $mobile-portrait) {
+            font-size: 80%;
+        }
     }
     .menu-detail {
         color: $menu-color;
@@ -32,6 +48,9 @@
         font-size: 18px;
         font-weight: lighter;
         text-align: justify;
+        @media screen and (max-width: $mobile-portrait) {
+            font-size: 16px;
+        }
     }
     img {
         display: inline-block;
@@ -85,7 +104,6 @@
     .menu-pasta,
     .menu-ramen,
     .olderpost {
-        margin-right: 10px;
-        margin-left: 10px;
+        padding: 10px;
     }
 }

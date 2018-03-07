@@ -1,6 +1,8 @@
 // Variables
-$body-font: 'Roboto', 'sans-serif';
-$font:'Roboto Condensed', sans-serif;
+$body-font: 'Roboto',
+'sans-serif';
+$font:'Roboto Condensed',
+sans-serif;
 $menu-background: white;
 $menu-color: rgb(60, 60, 60);
 $dark-blue: rgb(0, 89, 145);
@@ -11,13 +13,11 @@ $header-bg-color: rgb(249, 249, 249);
 $mobile-header-bg-color: rgb(242, 242, 242);
 $nav-hover-color: #dfdfdf;
 $wrapper-width: 939.11px;
-
 // Media
 $mobile-portrait: 450px;
 $mobile-landscape: 650px;
 $tablet-portrait: 800px;
 $tablet-landscape: 1024px;
-
 // Utility Classes
 .sr-only {
     position: absolute;
@@ -71,24 +71,19 @@ $site-max-width: 939.11;
     .col-02 {
         width: $col2;
     }
-}
-
-@media screen and (max-width: $tablet-landscape) {
-    .wrapper {
+    @media screen and (max-width: $tablet-landscape) {
         margin: 0 30px;
     }
-}
-@media screen and (max-width:$tablet-portrait) {
-    .wrapper {
+    @media screen and (max-width:$tablet-portrait) {
         margin: 0 20px;
         .col-01 {
             width: 100%;
         }
     }
-}
-@media screen and (max-width: $mobile-portrait) {
-    .col-01 {
-        width: 100%;
+    @media screen and (max-width: $mobile-portrait) {
+        margin: 0 10px;
+        .col-01 {
+            width: 100%;
+        }
     }
 }
-
