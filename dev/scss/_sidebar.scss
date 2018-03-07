@@ -82,21 +82,8 @@
         text-decoration: none;
         color: black;
     }
-    
 }
 
-// @media screen and (max-width: 950px) {
-//     .col-02 {
-//         .latestrecipes {
-//             ul {
-//                 li {
-//                     font-size: 80%;
-//                 }
-
-//             }
-//         }
-//     }
-// }
 @media screen and (max-width: $tablet-portrait) {
     .col-02 {
         display: none;
