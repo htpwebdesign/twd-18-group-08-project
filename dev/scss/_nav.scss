@@ -19,7 +19,6 @@ nav {
             height: $height;
             $search-list-item-width: 187px;
             flex: 1;
-            // transition: all .5s ease;
             &.list-item-search {
                 flex: 0 0 $search-list-item-width;
                 order: 10;
@@ -31,8 +30,8 @@ nav {
                 line-height: $height;
                 color: #fff;
                 text-decoration: none;
-                font-family: $nav-font;
-                font-size: 15px;
+                font-family: $font;
+                font-size: 17px;
                 font-weight: bold;
                 transition: all .5s ease;
                 &:hover,
@@ -68,11 +67,27 @@ nav {
             color: #b6b6b6;
         }
     }
+    @media screen and (max-width: $tablet-landscape) {
+        margin: 0 30px;
+    }
+    @media screen and (max-width: $tablet-portrait) {
+        margin: 0 20px;
+        .list-item-search {
+            display: none;
+        }
+    }
+    @media screen and (max-width: $mobile-landscape) {
+        margin: 0 20px;
+        .list-item-search {
+            display: none;
+        }
+    }
     @media screen and (max-width: 560px) {
         width: 100%;
-        // height: 0;
-        display: none;
-        // transition: height .5s ease;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.6s ease;
+        margin: 0;
         >ul {
             display: block;
             font-weight: 600;
@@ -83,7 +98,6 @@ nav {
                 border-bottom: 1px solid $dark-blue;
             }
             .social-icons-list li {
-                // margin: 0;
                 border-bottom: 0;
             }
             li:hover {
@@ -96,52 +110,15 @@ nav {
                     }
                 }
             }
+            .list-item-search {
+                display: block;
+            }
         }
         .show & {
             display: block;
-            border-bottom: 2px solid $dark-blue; 
+            border-bottom: 2px solid $dark-blue;
             margin: 0;
-            height: 100%;
+            height: 282px;
         }
     }
-    @media screen and (max-width: $mobile-landscape) {
-        margin: 0 20px;
-        .list-item-search {
-            display: none;
-        }
-    }
-    @media screen and (max-width: $tablet-landscape) {
-        margin: 0 30px;
-    }
-    @media screen and (max-width:$tablet-portrait) {
-        margin: 0 20px;
-        .list-item-search {
-            display: none;
-        }
-    }
-    @media screen and (max-width: 560px) {
-        display: none;
-        .list-item-search {
-            display: block;
-        }
-    }
-    
 }
-@media screen and (max-width: 560px) {
-            
-    nav {
-        .nav-center{
-            width: 100%;
-            height: 0;
-            overflow: hidden;
-            transition: height .5s ease;
-            padding: 0;
-        }
-    }
-
-
-}
-
-
-
-

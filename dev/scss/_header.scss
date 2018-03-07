@@ -62,7 +62,6 @@ header {
 @media screen and (max-width: $mobile-landscape) {
     header {
         .logo-wrapper {
-            // padding: 20px 0;
             .logo-desktop {
                 margin-right: auto;
             }
@@ -72,6 +71,7 @@ header {
         }
     }
 }
+
 @media screen and (max-width: 560px) {
     header {
         background-color: $mobile-header-bg-color;
@@ -79,7 +79,7 @@ header {
             width: 100%;
             border-bottom: 2px solid $dark-blue;
             margin: 0;
-            padding: 20px;
+            padding: 23px 0;
             .show & {
                 border-bottom: 1px solid $dark-blue;
             }
@@ -99,11 +99,10 @@ header {
         }
         .top-searchbox {
             display: none;
-
         }
-
     }
 }
+
 @media screen and (max-width: $mobile-portrait) {
     header {
         background-color: $mobile-header-bg-color;
@@ -112,9 +111,6 @@ header {
             margin: 0;
             padding: 12px 10px;
             border-bottom: 2px solid $dark-blue;
-            .show & {
-                // border-bottom: 1px solid $dark-blue;
-            }
             .logo-mobile {
                 display: block;
             }
@@ -140,4 +136,3 @@ header {
         }
     }
 }
-
