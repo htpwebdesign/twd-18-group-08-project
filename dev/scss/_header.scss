@@ -62,7 +62,6 @@ header {
 @media screen and (max-width: $mobile-landscape) {
     header {
         .logo-wrapper {
-            // padding: 20px 0;
             .logo-desktop {
                 margin-right: auto;
             }
@@ -99,9 +98,7 @@ header {
         }
         .top-searchbox {
             display: none;
-
         }
-
     }
 }
 @media screen and (max-width: $mobile-portrait) {
